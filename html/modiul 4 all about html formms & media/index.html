@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 5;
+            margin: 5;
+        }
+    </style>
+</head>
+<body>
+    <!-- this action attribute for link databage -->
+     <!-- get mathord is not secure  -->
+     <!-- mathod= post means for send data securely -->
+     <!-- placeholder for box text show -->
+    <form action="#" method="post">
+        <label for="name">Name: </label>
+        <input type="text" id="name" placeholder="Enter your name" autofocus><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your Email" required><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password"><br>
+
+        <label">Country</label>
+        <input list="country">
+        <datalist id="country">
+            <option value="Bangladesh"></option>
+            <option value="India"></option>
+            <option value="England"></option>
+        </datalist>
+        <br>
+        <label for="countrycode">Country Code:</label>
+        <select name="countrycode" id="countrycode">
+            <option value="+1">+1 (United States)</option>
+            <option value="+44">+44 (United Kingdom)</option>
+            <option value="+91">+91 (India)</option>
+            <option value="+81">+81 (Japan)</option>
+            <option value="+49">+49 (Germany)</option>
+            <br>
+        </select>
+        <br>
+        <label for="phonenumber">Phone Number:</label>
+        <input type="tel" id="phonenumber" name="phonenumber" placeholder="Enter your phone number" required>
+    
+        <input type="submit" value="Submit">
+        </select>
+        <input type="tel" placeholder="Enter your Number"> <br>
+        <label for="">Select your Gender</label>
+        <input type="radio" name="gender" id="male"><label for="male">Male</label>
+        <input type="radio" name="gender" id="femal"><label for="femal">femal</label>
+        <br>
+        <label for="">Type of device you have ?</label><br>
+        <input type="checkbox" name="phn" value="phone" id="phn">
+        <label for="phn">I have a phone</label><br>
+
+        <input type="checkbox" name="tab" value="phone" id="tab">
+        <label for="tab">I have a tablate</label><br>
+
+        <input type="checkbox" name="laptop" value="phone" id="laptop">
+        <label for="laptop">I have a Laptop</label><br>
+
+        <label for="color">Your fevreat Color</label>
+        <input type="color" id="color">
+        <br>
+        <label for="ageRange">Select Your Age (18-30):</label>
+        <input type="range" id="ageRange" name="ageRange" min="18" max="30" value="24" oninput="this.nextElementSibling.value = this.value">
+        <output>24</output> <br>
+        <label for="birtch">Enter your date of birtch</label>
+        <br>
+        <input type="date" id="birtch"><br>
+        <input type="time" name="birtch" id=""><br>
+        <input type="search" placeholder="Search Something You want"><br>
+
+        <label for="website">Enter your site url</label>
+        <input type="url" placeholder="Enter your webste" id="website"> <br>
+        <br>
+        <label for="file">Upload your file</label><br>
+        <input type="file" name="" id="file" placeholder="uplod your file "><br><br>
+        <br>
+        
+
+        <label for="">Make</label>
+        <textarea name="ques" id="ques" cols="30" rows="10"></textarea> <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <!--  -->
+        
+    </form>
+
+</body>
+</html>
