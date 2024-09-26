@@ -1,0 +1,74 @@
+*{
+    background-color: azure;
+    padding: 0;
+    margin: 10px;
+}
+h1{
+    /* text decoration */
+    text-align: center;
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(202, 48, 48);    
+    text-decoration-style: wavy;
+    text-decoration-thickness: 4px;
+    /* in one line  */
+    text-decoration: underline blue 5px dotted;
+    padding-bottom: 40px;
+    text-shadow: 0 0 3px #ff0000;
+}
+h2{
+    text-shadow: 2px 2px 10px blue;
+    text-align: center;
+    padding: 10px;
+
+}
+.text{
+    background-color: antiquewhite;
+    text-decoration: double;
+    padding: 15px;
+    margin-bottom: 40px;
+    border-top: 2px solid red;
+    /* means a little bit speach in stearting site */
+    text-indent: 10px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    word-spacing: 5px;
+    text-shadow: 0 0 3px #56f00f;
+}
+.rr{
+    /* outline and border */
+    border: 5px dotted blueviolet;
+    padding: 10px;
+    margin: 20px;
+    outline-style:dashed ;
+    /* direction means text where steart that location */
+    direction: rtl;
+    outline-color: rgb(216, 14, 14);
+    outline-width: 8px;
+    outline-offset: 10px;
+    /* text transformation */
+    text-transform: uppercase;
+}
+.rt{
+    margin: 20px;
+    margin-top: 80px;
+    color: rgb(0, 0, 0);
+    border: 5px dotted blueviolet;
+    padding: 10px;
+        /* outline shorted */
+                outline: 8px dashed rgb(216, 14, 14); outline-offset: 10px;
+    direction: rtl;
+    text-transform: lowercase;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(156, 156, 201), 0 0 5px rgb(120, 120, 179);
+}
+.rn{
+    background-color: rgb(148, 146, 143);
+    margin-top: 50px;
+    padding: 5px;
+    /* text formate */
+    text-align: justify;
+    color: greenyellow;
+    /* text transform */
+    text-transform: capitalize;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
