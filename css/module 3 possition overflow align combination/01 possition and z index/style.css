@@ -1,0 +1,36 @@
+.parent{
+    background-color: palevioletred;
+    position: relative;
+    height: 600vh;
+}
+.child-one {
+   position: relative;
+   background-color: blue;
+   left: 50px;
+}
+.child-two {
+    position: fixed;
+    background-color: red;
+    left: 60px;
+}
+.child-three{
+    position: sticky;
+    background-color: green;
+    top: 0;
+    right: 40px;
+}
+/* img{
+    position: fixed;
+} */
+
+.green{
+    height: 400px;
+    background-color: green;
+    width: 600px;
+}
+.red{
+    height: 400px;
+    width: 400px;
+    background-color: red;
+    z-index: -1;
+}

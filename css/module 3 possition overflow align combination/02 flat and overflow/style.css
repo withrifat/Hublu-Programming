@@ -1,0 +1,18 @@
+.p1{
+    background-color: yellow;
+    padding: 10px 5%;
+    border: 2px solid black;
+    height: 200px;
+    width: 90%;
+    float: right;
+    overflow: auto;
+}
+img{
+    height: 230px;
+    float: inherit;
+    padding: 10px;
+    /* float: inherit means work on first float value like there are first value of div p1 and p1 make the all child value change */
+}
+p{
+    padding: 10;
+}
