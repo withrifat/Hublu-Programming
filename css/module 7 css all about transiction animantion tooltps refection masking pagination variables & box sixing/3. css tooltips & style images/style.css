@@ -1,0 +1,48 @@
+body{
+    text-align: center;
+}
+.tooltip{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid red;
+}
+.tooltip .tooltip_content{
+    color: blue;
+    visibility: hidden;
+    width: 120px;
+    background-color: lightgreen;
+    padding: 5px ;
+    border-radius: 6px;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    top: -5px;
+    top: 100%;
+    left: 50%;
+    margin-left: -90px;
+    opacity: 0;
+    transition: opacity 1s ;
+}
+.tooltip:hover .tooltip_content{
+    visibility: visible;
+    opacity: 1;
+}
+.mountain{
+    height: 300px;
+    width: 300px;
+    margin-top: 100px;
+    box-shadow: 0 8px 20px 6px rgba(0, 120, 255, 0.3), 
+    0 12px 24px 8px rgba(0, 120, 255, 0.2), 
+    0 16px 30px 10px rgba(0, 120, 255, 0.1);
+
+    align-items: center;
+
+    border-radius: 50%;
+}
+.village{
+    border: 5px solid green;
+    padding-top: 50%;
+    padding: 10px;
+    width: 90%;
+    height: auto;
+}

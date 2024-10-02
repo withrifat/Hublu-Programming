@@ -1,0 +1,54 @@
+    /* The animation code */
+    @keyframes example {
+        from {background-color: red;}
+        to {background-color: yellow;}
+      }
+      
+      /* The element to apply the animation to */
+      .div1 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: example;    /* example is a animation name and we use this name like a variable */
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+      }
+
+      /*  */
+      .div2{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: new;   
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+      }
+      @keyframes new{
+        0%{
+            background-color: green;
+            left: 0px;
+            top: 0px;
+        }
+        25%{
+            background-color: yellow;
+            left: 200px;
+            top: 0px;
+        }
+        50%{
+            background-color: aqua;
+            left: 200px;
+            top: 200px;
+        }
+        75%{
+            background-color: yellow;
+            left: 0px;
+            top: 200px;
+        }
+        100%{
+            background-color: lightblue;
+            left: 0px;
+            top: 0px;
+        }
+      }

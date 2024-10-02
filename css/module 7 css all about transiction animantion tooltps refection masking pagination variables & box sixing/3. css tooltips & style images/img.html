@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position: relative;
+
+        }
+        h2{
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+        .first{
+            width: 90%;
+            height: auto;
+            margin: auto;
+            opacity: 50%;
+        }
+        .second{
+            height: 300px;
+            width: auto;
+            margin: auto;
+            position: absolute;
+            filter: saturate(2);
+        }
+        box{
+            position: relative;
+            width: 50%;
+            display: block;
+        }
+        .text{
+            position: absolute;
+            text-align: center;
+
+        }
+        img{
+            
+        }
+        .mask1 {
+  -webkit-mask-image: url(../card.jpg);
+  mask-image: url(w3logo.png);
+  mask-repeat: no-repeat;
+}
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        <img class="first" src="../village.jpg" alt="">
+        <h2>text</h2>
+    </div> -->
+    <!-- <div class="box">
+        <img class="second" src="../card.jpg" alt="">
+        <div class="text">
+            hellow world
+        </div>
+    </div> -->
+    <div class="mask1">
+        <img src="../village.jpg" height="300px"  width="300px">
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box ;
+}
+.from_deg{
+    background-color: aliceblue;
+    padding: 30px;
+    overflow: hidden;
+}
+.from_deg input, select{
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 12px;
+}
+.from_deg input:focus{
+    outline: 1px solid #04aa6d;
+}
+.from_deg textarea{
+    height: 200px;
+    width: 100%;
+    border-radius: 3px;
+    resize: vertical;
+}
+.from_deg textarea:focus{
+    outline: 1px solid #04aa6d;
+}
+input[type=button]{
+    background-color: #04aa6d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+}
+input[type=button]:hover{
+    background-color: #45a049;
+
+}

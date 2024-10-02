@@ -1,0 +1,23 @@
+div{
+    height: 100px;
+    width: 100px;
+}
+.div1{
+    background-color: saddlebrown;
+    transition: height 2s, width 5s;
+}
+div:hover{
+    width: 300px;
+    height: 300px;
+}
+.div2{
+    background-color: green;
+    transition: height 2s, width 2s;
+}
+.div3{
+    transition-timing-function: cubic-bezier(075, 0.82, 0.165, 1);
+    background-color: blue;
+    transition-delay: 1s;
+}
+
+/* wesbsite name: cubic-bezier.com */

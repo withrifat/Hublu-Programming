@@ -1,0 +1,25 @@
+:root {
+    --primary-color: #3498db;       /* Light Blue */
+    --secondary-color: #2ecc71;     /* Green */
+    --accent-color: #e74c3c;        /* Red */
+    --background-color: #f5f5f5;    /* Light Gray */
+    --text-color: #333333;          /* Dark Gray */
+    --link-color: #1e90ff;          /* Dodger Blue */
+    --hover-color: #f39c12;         /* Orange */
+    --border-color: #dcdcdc;        /* Light Gray */
+    --button-color: #8e44ad;        /* Purple */
+    --button-hover-color: #9b59b6;  /* Light Purple */
+  }
+
+.demo{
+    --blue: #0000ff;
+    background-color: var(--blue);
+    width: 300px;
+    height: 200px;
+   
+}
+button{
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+}

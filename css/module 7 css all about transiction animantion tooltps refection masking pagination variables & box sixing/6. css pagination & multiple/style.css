@@ -1,0 +1,31 @@
+h1{
+    background-color: rgb(137, 194, 214);
+    border-radius: 5px;
+    color: whitesmoke;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+}
+.page{
+    display: inline;
+
+}
+.page a{
+    text-decoration: none;
+    color: black;
+    padding: 8px 26px;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+    border: 1px solid #ddd;
+    
+
+}
+.center{
+    align-items: center;
+}
+.page .active{
+    background-color: green;
+    color: white;
+}
+.page a:hover:not(a.active){
+    background-color: #ddd;
+}

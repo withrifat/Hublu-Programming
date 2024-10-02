@@ -1,0 +1,5 @@
+activity bar
+sourch control 
+run and debug 
+extention pannel
+account settings

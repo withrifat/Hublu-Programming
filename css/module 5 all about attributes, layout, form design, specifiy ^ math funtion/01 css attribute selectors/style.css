@@ -1,0 +1,21 @@
+a[target]{
+    color: green;
+}
+a[target="google"]{
+    color: red;
+}
+p[class~="para"]{
+    color: brown;
+}
+p[class|="new"]{
+    color: blue;
+}
+p[class^="para"]{
+    color: burlywood;
+}
+p[class$="new"]{
+    color: rgb(156, 115, 27);
+}
+p[class*="new"]{
+    color: red;
+}

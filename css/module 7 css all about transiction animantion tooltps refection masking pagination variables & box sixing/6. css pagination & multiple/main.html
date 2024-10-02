@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.page {
+  display: flex;
+  justify-content: center;   /* Center horizontally */
+  align-items: center;       /* Center vertically (if needed) */
+  gap: 10px;                 /* Space between each link */
+  padding: 10px;             /* Add padding around pagination */
+}
+
+.page a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #000;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; 
+}
+
+.page a:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker, larger shadow on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.page a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow for active link */
+}
+
+.page a:active {
+  transform: translateY(1px); /* Press effect */
+}
+
+    </style>
+</head>
+<body>
+    <div class="page">
+        <a href="#">&laquo;</a>
+        <a href="#">1;</a>
+        <a href="#" class="active">2;</a>
+        <a href="#">3;</a>
+        <a href="#">4;</a>
+        <a href="#">&raquo;</a>
+    </div>
+</body>
+</html>
