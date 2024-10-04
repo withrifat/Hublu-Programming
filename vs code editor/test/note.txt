@@ -3,3 +3,9 @@ sourch control
 run and debug 
 extention pannel
 account settings
+ctrl shift f4 for undow close iteams
+ctrl f4 for close tab
+alter one two three for change tab 
+ctrl shift use arrow for select any text 
+
+shift alter f for formet text
