@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image Container */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 50vh; /* 50% of the viewport height */
+    overflow: hidden;
+}
+
+/* Main Image */
+.main-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+/* Centered Div */
+.centered-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the div horizontally and vertically */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.centered-div h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .centered-div h1 {
+        font-size: 1.5rem;
+    }
+
+    .centered-div {
+        padding: 1.5rem;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+
+
+    <!-- Image Container -->
+    <div class="image-container">
+        <!-- Main Image -->
+        <img src="images/Rectangle 1.png" alt="Main Cover" class="main-cover">
+        
+        <!-- Centered Div -->
+        <div class="centered-div">
+            <h1>Centered Text on Image</h1>
+        </div>
+    </div>
+    
+
+</body>
+</html>

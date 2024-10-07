@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  "Inter", sans-serif;
+}
+/* this is for navbar section */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 28px;
+    background-color: #f8f8f8;
+    flex-wrap: wrap;
+
+    img {
+        height: 22px;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        gap: 21px;
+        margin: 0;
+        padding: 0;
+
+        li {
+            a {
+                text-decoration: none;
+                color: #070707;
+                font-weight: 15px;
+            }
+        }
+    }
+
+    .box {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        
+            &.first {
+                background-color: #F1F1F1;
+            }
+        
+            &.second {
+                background-color: #000000;
+                color: white; 
+            }
+        }
+
+        img {
+            height: 30px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+
+        ul {
+            flex-direction: column;
+            width: 100%;
+            padding: 10px 0;
+
+            li {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        .box {
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        .box {
+            button {
+                width: 100%;
+                padding: 12px;
+            }
+        }
+    }
+}
+
+/* hero section */
+.hero {
+    position: ;
+
+    .find {
+        position: relative;
+        width: 100%;
+        .main-cover {
+            width: 100%;
+            height: 760px;
+            object-fit: cover;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 20%; 
+        }
+
+        .offer {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Center the div horizontally and vertically */
+            background-color: #ffff;
+            padding: 5rem 10rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+            & .txt_head {
+                margin-bottom: 20px; 
+                width: 500;
+                line-height: 54.46px;
+                font-size: 45px;
+                text-align: center;
+            }
+        }
+
+        .select {
+            margin: 20px 0;
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+
+                .dropdown-toggle {
+                    cursor: pointer;
+                    color: #007BFF;
+                    text-decoration: none;
+                    padding: 10px;
+                }
+
+                .dropdown-menu {
+                    display: none;
+                    position: absolute;
+                    background-color: white;
+                    border: 1px solid #ccc;
+                    z-index: 1;
+
+                    li {
+                        padding: 5px 10px; // Add padding to dropdown items
+                    }
+                }
+
+                &:hover .dropdown-menu {
+                    display: block;
+                }
+            }
+        }
+
+        .two_switch {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .calculate-button {
+                padding: 15px;
+                background-color: #007BFF;
+                color: white;
+                border-radius: 5px;
+                cursor: pointer;
+                flex-grow: 1;
+                text-align: center;
+                margin-right: 10px;
+            }
+
+            .find-offer-button {
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                background-color: #28A745;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .find {
+            .offer {
+                top: 15%; // Adjust for smaller screens
+            }
+
+            .two_switch {
+                flex-direction: column;
+                align-items: stretch;
+
+                .calculate-button {
+                    margin-bottom: 10px; // Spacing for mobile
+                }
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        .find {
+            .offer {
+                h1 {
+                    font-size: 24px; // Adjust font size for smaller screens
+                }
+            }
+
+            .find-offer-button {
+                width: 100%; // Full-width button on small screens
+            }
+        }
+    }
+}
