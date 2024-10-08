@@ -1,11 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family:  "Inter", sans-serif;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
 }
-/* this is for navbar section */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* header section style */
 nav {
     display: flex;
     align-items: center;
@@ -13,218 +22,566 @@ nav {
     padding: 10px 28px;
     background-color: #f8f8f8;
     flex-wrap: wrap;
-
+  
     img {
-        height: 22px;
+      height: 22px;
     }
-
+  
     ul {
-        list-style-type: none;
-        display: flex;
-        gap: 21px;
-        margin: 0;
-        padding: 0;
-
-        li {
-            a {
-                text-decoration: none;
-                color: #070707;
-                font-weight: 15px;
-            }
+      list-style-type: none;
+      display: flex;
+      gap: 21px;
+      margin: 0;
+      padding: 0;
+  
+      li {
+        a {
+          text-decoration: none;
+          color: #070707;
+          font-weight: 15px;
         }
+      }
     }
-
+  
     .box {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-
-        button {
-            padding: 10px 15px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        
-            &.first {
-                background-color: #F1F1F1;
-            }
-        
-            &.second {
-                background-color: #000000;
-                color: white; 
-            }
+      display: flex;
+      align-items: center;
+      gap: 10px;
+  
+      button {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+  
+        &.first {
+          background-color: #f1f1f1;
         }
-
-        img {
-            height: 30px;
+  
+        &.second {
+          background-color: #000000;
+          color: white;
         }
+      }
+  
+      img {
+        height: 30px;
+      }
     }
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+  
+      ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+  
+        li {
+          width: 100%;
+          text-align: center;
+        }
+      }
+  
+      .box {
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    nav {
+      .box {
+        button {
+          width: 100%;
+          padding: 12px;
+        }
+      }
+    }
+  }
+/* ................offer finder section......................... */
+.offer-finder-section {
+    position: relative;
+    text-align: center;
+    padding: 100px ;
+  }
+  
+  .background-image {
+    background-image: url(https://github.com/noob-hablu/css-assignment/blob/main/images/Rectangle%201.png?raw=true);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: blur(2px) brightness(70%);
+  }
+  
+  .offer-finder {
+    background-color: white;
+    padding: 30px 80px;
+    display: flex;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .offer-finder h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .offer-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 1rem ;
+  }
+  
+  .offer-options select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .offer-finder input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .find-offer-btn {
+    background-color: #00d9a1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .zappr-btn {
+    background-color: transparent;
+    
+    border: 2px solid #ddd;
+    color: #fcf8f8;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-top: 7vh;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+/* ............Crypto Banner Section......... */
+.crypto-banner {
+    background-color: #FDE24F;
+    padding: 1vw; 
+    text-align: center;
+}
+
+.crypto-banner p {
+    font-size: 1.8vw;  
+    font-weight: bold;
+}
+
+.crypto-icons .frame {
+    padding: 0 30vh;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2vw; 
+    gap: 5vw; 
+    width: 100%; 
+    max-width: 100%; 
+    flex-wrap: wrap; 
+}
+
+.crypto-icons img {
+    width: 10vw; 
+    height: auto; 
+    max-width: 100%; 
 }
 
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
+    .crypto-banner p {
+        font-size: 4vw; 
+    }
 
-        ul {
-            flex-direction: column;
-            width: 100%;
-            padding: 10px 0;
+    .crypto-icons .frame {
+        gap: 3vw; 
+    }
 
-            li {
-                width: 100%;
-                text-align: center;
-            }
-        }
+    .crypto-icons img {
+        width: 20vw; 
+    }
+}
+/* features section */
+.features-section {
+    text-align: center;
+    padding: 50px 20px;
+}
 
-        .box {
-            width: 100%;
-            justify-content: space-between;
-        }
+.features-section h2 {
+    font-size: 34px;
+    padding-left: 30vh;
+    margin-bottom: 40px;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.feature {
+    width: 200px;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.feature p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.feature a {
+    font-size: 14px;
+    color: #000;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.feature a:hover {
+    color: #007BFF;
+}
+
+.divider {
+    height: 1px;
+    width: 150px;
+    border-top: 1px solid black;
+    background-color: #ddd;
+    margin: 0 30px;
+    margin-top: 85px;
+}
+
+.full-features-btn {
+    background-color: transparent;
+    border: 2px solid #000;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-top: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.full-features-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .features-section h2 {
+        font-size: 28px;
+        text-align: center  ;
+        padding-left: 0;
+    }
+
+    .feature {
+        width: 150px;
+        margin: 10px;
+    }
+
+    .feature h3 {
+        font-size: 18px;
+    }
+
+    .feature p {
+        font-size: 12px;
+    }
+
+    .feature a {
+        font-size: 12px;
+    }
+
+    .full-features-btn {
+        font-size: 14px;
+        padding: 8px 16px;
     }
 }
 
 @media (max-width: 480px) {
-    nav {
-        .box {
-            button {
-                width: 100%;
-                padding: 12px;
-            }
-        }
+    .features-section {
+        padding: 30px 10px;
+    }
+
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .divider {
+        width: 100px;
+        margin: 20px auto;
     }
 }
+/*  Sell Offers  */
+.offers-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  
+  .offers-container {
+    margin: 0 40px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .offer {
+    border: 1px solid #030303;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 13px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .offer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .offer-info span {
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .offers-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 1px solid black;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .offers-btn:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .offers-section {
+      flex-direction: column;
+      padding: 20px 10px;
+    }
+  
+    .offers-container {
+      margin: 0 20px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    .offer-info {
+      flex-direction: column;
+      max-width: 100%;
+    }
+  
+    .offer-info span {
+      font-size: 12px;
+    }
+  
+    .offers-btn {
+      padding: 8px 16px;
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 18px;
+    }
+  
+    .icon {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .offers-btn {
+      padding: 6px 12px;
+      font-size: 10px;
+    }
+  }
+  
+/* end of  uy and sell section ..................................... */
+.signup-banner {
+    background-color: #CFBAFF;
+    ;
+    text-align: center;
+    padding: 50px 20px;
+    padding-top: 90px;
+    color: #000;
+}
 
-/* hero section */
-.hero {
-    position: ;
+.signup-banner h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
 
-    .find {
-        position: relative;
+.cta-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    color: #000;
+    background-color: #999898;
+    transition: linear .3s;
+}
+/* steart footer */
+footer {
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 20px;
+}
+
+.footer-column {
+    flex-basis: 25%;
+    margin-bottom: 20px;
+}
+
+.footer-column h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-column ul li a strong {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.6;
+    text-align: center;
+    padding: 30px;
+}
+
+@media (max-width: 768px) {
+    .header, .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offer-options select, .offer-finder input {
         width: 100%;
-        .main-cover {
-            width: 100%;
-            height: 760px;
-            object-fit: cover;
-        }
-
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 20%; 
-        }
-
-        .offer {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%); /* Center the div horizontally and vertically */
-            background-color: #ffff;
-            padding: 5rem 10rem;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-
-            & .txt_head {
-                margin-bottom: 20px; 
-                width: 500;
-                line-height: 54.46px;
-                font-size: 45px;
-                text-align: center;
-            }
-        }
-
-        .select {
-            margin: 20px 0;
-
-            .dropdown {
-                position: relative;
-                display: inline-block;
-
-                .dropdown-toggle {
-                    cursor: pointer;
-                    color: #007BFF;
-                    text-decoration: none;
-                    padding: 10px;
-                }
-
-                .dropdown-menu {
-                    display: none;
-                    position: absolute;
-                    background-color: white;
-                    border: 1px solid #ccc;
-                    z-index: 1;
-
-                    li {
-                        padding: 5px 10px; // Add padding to dropdown items
-                    }
-                }
-
-                &:hover .dropdown-menu {
-                    display: block;
-                }
-            }
-        }
-
-        .two_switch {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            .calculate-button {
-                padding: 15px;
-                background-color: #007BFF;
-                color: white;
-                border-radius: 5px;
-                cursor: pointer;
-                flex-grow: 1;
-                text-align: center;
-                margin-right: 10px;
-            }
-
-            .find-offer-button {
-                padding: 10px 20px;
-                border: none;
-                border-radius: 5px;
-                background-color: #28A745;
-                color: white;
-                cursor: pointer;
-            }
-        }
     }
 
-    @media (max-width: 768px) {
-        .find {
-            .offer {
-                top: 15%; // Adjust for smaller screens
-            }
-
-            .two_switch {
-                flex-direction: column;
-                align-items: stretch;
-
-                .calculate-button {
-                    margin-bottom: 10px; // Spacing for mobile
-                }
-            }
-        }
+    .features-container, .offers-section {
+        flex-direction: column;
     }
 
-    @media (max-width: 480px) {
-        .find {
-            .offer {
-                h1 {
-                    font-size: 24px; // Adjust font size for smaller screens
-                }
-            }
-
-            .find-offer-button {
-                width: 100%; // Full-width button on small screens
-            }
-        }
+    .offers-container {
+        margin: 20px 0;
     }
 }

@@ -3,81 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>helloswaps</title>
     <link rel="stylesheet" href="style.css">
-    <title>Assignment</title>
 </head>
 <body>
-    <!-- nav bar -->
-  <nav>
-    <img src="images/Logo.png" alt="">
-    <ul>
+    <!-- header section markup -->
+    <nav>
+      <img src="images/Logo.png" alt="" />
+      <ul>
         <li><a href="#">Buy</a></li>
         <li><a href="#">Sell</a></li>
         <li><a href="#">Create an offer</a></li>
-    </ul>
-    <div class="box">
+      </ul>
+      <div class="box">
         <button class="first">Login</button>
         <button class="second">Get Started</button>
-        <img src="images/Frame.png" alt="">
-    </div>
-  </nav>
-  <section class="hero">
-    <div class="find">
-        <img src="images/Rectangle 1.png" alt="Main Cover" class="main-cover">
-        <img src="images/opacity.jpeg" alt="Overlay" class="overlay">
-        <div class="offer">
-            <div class="txt_head">Find your offer ✨</div>
-            <div class="switch_box">
-                
-                <div class="select">
-                    <div class="dropdown">
-                        <a href="#" class="dropdown-toggle">Currency</a>
-                        <ul class="dropdown-menu Currency">
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                        </ul>
-                    </div>
-                    <div class="dropdown">
-                        <a href="#" class="dropdown-toggle">Buy</a>
-                        <ul class="dropdown-menu Buy">
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                        </ul>
-                    </div>
-                <div class="dropdown">
-                    <a href="#" class="dropdown-toggle">Payment</a>
-                    <ul class="dropdown-menu payment">
-                        <li>Bkash</li>
-                        <li>Nogod</li>
-                        <li>Rocket</li>
-                    </ul>
-                </div>
-                <div class="dropdown">
-                    <a href="#" class="dropdown-toggle">Country</a>
-                    <ul class="dropdown-menu Country">
-                        <li>US Dollar (USD)</li>
-                        <li>Euro (EUR)</li>
-                        <li>British Pound (GBP)</li>
-                        <li>Japanese Yen (JPY)</li>
-                        <li>Swiss Franc (CHF)</li>
-                        <li>Canadian Dollar (CAD)</li>
-                        <li>Aussie Dollar (AUD)</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="two_switch">
-                <div class="calculate-button">
-                    How Much
-                </div>
-                <button class="find-offer-button">Find Offer</button>
-            </div>
-        </div>
-        </div>
-    </div>
-</section>
+        <img src="images/Frame.png" alt="" />
+      </div>
+    </nav>
 
+    <!-- Offer Finder Section -->
+    <section class="offer-finder-section">
+        <div class="background-image"></div>
+        <img src="" alt="">
+        <div class="offer-finder">
+            <h2>Find your offer ✨</h2>
+            <div class="offer-options">
+                <select>
+                    <option>Currency</option>
+                    <option value="usd">USD</option>
+                    <option value="bdt">BDT</option>
+                </select>
+                <select>
+                    <option>Buy</option>
+                    <option value="buy" selected>Buy</option>
+                    <option value="payment">Payment</option>
+                </select>
+                <select>
+                    <option>Payment</option>
+                    <option value="payment" selected>Payment</option>
+                    <option value="buy">Buy</option>
+                </select>
+                <select>
+                    <option>Currency</option>
+                    <option value="usd">USD</option>
+                    <option value="bdt">BDT</option>
+                </select>
+            </div>
+            <input type="text" placeholder="How much">
+            <button class="find-offer-btn">Find offer</button>
+        </div>
+        <section>
+          <button class="zappr-btn">Why Zappr?</button>
+        </section>
+    </section>
+
+    <!-- Crypto Banner Section -->
+    <hr>
+
+    <section class="crypto-banner">
+        <p>Buy/Sell the favorites with <em>No Fees*</em></p>
+        <div class="crypto-icons">
+          <img class="frame" src="https://github.com/noob-hablu/css-assignment/blob/main/images/Frame%2015.png?raw=true" alt="">
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <h2>Features: We think about you</h2>
+        <div class="features-container">
+            <!-- Feature 1 -->
+            <div class="feature">
+                <img src="https://github.com/noob-hablu/css-assignment/blob/main/images/SecureEscrow.png?raw=true" alt="Escrow Icon" class="feature-icon">
+                <h3>Secured by Escrow</h3>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                <a href="#">Learn how our Escrow works</a>
+            </div>
+
+            <!-- Divider -->
+            <div class="divider"></div>
+
+            <!-- Feature 2 -->
+            <div class="feature">
+                <img src="https://github.com/noob-hablu/css-assignment/blob/main/images/NewbieFriendly.png?raw=true" alt="Newbie Icon" class="feature-icon">
+                <h3>Newbie Friendly</h3>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                <a href="#">We always keep you in mind, See More</a>
+            </div>
+
+            <!-- Divider -->
+            <div class="divider"></div>
+
+            <!-- Feature 3 -->
+            <div class="feature">
+                <img src="https://github.com/noob-hablu/css-assignment/blob/main/images/MultiplePayments.png?raw=true" alt="Payment Methods Icon" class="feature-icon">
+                <h3>120+ Payment Methods</h3>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                <a href="#">Discover all Payment Methods</a>
+            </div>
+        </div>
+
+        <!-- Full Features Button -->
+        <button class="full-features-btn">See full features</button>
+    </section>
+
+    <div class="feature-border"></div>
+<!-- Buy and Sell Offers Section -->
+    <section class="offers-section">
+        <!-- Buy Offers -->
+        <div class="offers-container">
+            <h2>Buy</h2>
+            <div class="offer">
+                <div class="offer-info">
+                    <div class="icon" style="background: linear-gradient(to right, #ebd885,white);"></div>
+                    <span>Zelle, 1+</span>
+                    <span>30,244.12 USD/BTC</span>
+                    <span>$10–200$</span>
+                </div>
+            </div>
+
+            <div class="offer">
+                <div class="offer-info">
+                    <div class="icon" style="background: linear-gradient(to right, #85c6eb,white);"></div>
+                    <span>Paypal</span>
+                    <span>30,244.12 USD/BTC</span>
+                    <span>$5–1K$</span>
+                </div>
+            </div>
+
+            <div class="offer">
+                <div class="offer-info">
+                    <div class="icon" style="background: linear-gradient(to right, #85eb8a,white);"></div>
+                    <span>Wire</span>
+                    <span>30,244.12 USD/BTC</span>
+                    <span>$100–3K$</span>
+                </div>
+            </div>
+            <button class="offers-btn">View Buy's Offers</button>
+        </div>
+
+        <!-- divider -->
+        <!-- Sell Offers -->
+        <div class="buy-sell"></div>
+
+
+        <div class="offers-container">
+            <h2>Sell</h2>
+            <div class="offer">
+                <div class="offer-info">
+                    <div class="icon" style="background: linear-gradient(to right, #dff17c,rgb(191, 233, 209));"></div>
+                    <span>Zelle, 1+</span>
+                    <span>30,244.12 USD/BTC</span>
+                    <span>$10–200$</span>
+                </div>
+            </div>
+
+            <div class="offer">
+                <div class="offer-info">
+                    <div class="icon" style="background: linear-gradient(to bottom, #7ae976,rgb(219, 235, 235));"></div>
+                    <span>Paypal</span>
+                    <span>30,244.12 USD/BTC</span>
+                    <span>$5–1K$</span>
+                </div>
+            </div>
+
+            <div class="offer">
+                <div class="offer-info">
+                    <div class="icon" style="background: linear-gradient(to right bottom, #e9d876,rgb(208, 209, 199));"></div>
+                    <span>Wire</span>
+                    <span>30,244.12 USD/BTC </span>
+                    <span>$100–3K$</span>
+                </div>
+            </div>
+            <button class="offers-btn">View Sell's Offers</button>
+        </div>
+    </section>
+
+    <!-- Sign-up Banner Section -->
+    <section class="signup-banner">
+        <h1>Sign up and buy or sell crypto in 5
+            <br> 
+            minutes with zero commission fees</h1>
+        <button class="cta-button">Get started</button>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <img src="https://github.com/noob-hablu/css-assignment/blob/main/images/spacio.png?raw=true" alt="Spacio Logo" class="logo">
+            </div>
+            <div class="footer-column">
+                <h2>Product</h2>
+                <ul>
+                    <li><a href="#">Sell Bitcoin</a></li>
+                    <li><a href="#">Buy Bitcoin</a></li>
+                    <li><a href="#">Sell Ethereum</a></li>
+                    <li><a href="#">Buy Ethereum</a></li>
+                    <li><a href="#">Sell Solana</a></li>
+                    <li><a href="#">Buy Solana</a></li>
+                    <li><a href="#">Features</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h2>About spacio</h2>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Fees</a></li>
+                    <li><a href="#"><strong>Careers</strong></a></li>
+                    <li><a href="#"><strong>Rewards Program</strong></a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h2>Support</h2>
+                <ul>
+                    <li><a href="#">Moderators</a></li>
+                    <li><a href="#">Contact Support</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Security</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="footer">
+            <p>
+                “SPACI0” is a registered trademark of Logic0x, Ltd. Copyright © 2022 Logic0x, Ltd. All Rights Reserved. Paxful Inc. has no relation to MoneyGram, Western Union, Payoneer, WorldRemit, Paxum, Paypal, Amazon, OkPay, Payza, <br> Walmart, Reloadit, Perfect Money, WebMoney, Google Wallet, BlueBird, Serve, Square Cash, NetSpend, Chase QuickPay, Skrill, Vanilla, MyVanilla, OneVanilla, Neteller, Venmo, Apple, ChimpChange or any other payment method. <br> We make no claims about being supported by or supporting these services. Their respective wordmarks and trademarks belong to them alone. Official mailing address: 3422 Old Capitol Trail, PMB 989, Wilmington DE 19808
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
-<!--  -->
