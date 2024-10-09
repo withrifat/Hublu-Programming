@@ -110,11 +110,11 @@ nav {
 .offer-finder-section {
     position: relative;
     text-align: center;
-    padding: 100px ;
-  }
-  
-  .background-image {
-    background-image: url(https://github.com/noob-hablu/css-assignment/blob/main/images/Rectangle%201.png?raw=true);
+    padding: 100px;
+}
+
+.background-image {
+    background-image: url(images/Rectangle%201.png);
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -124,64 +124,133 @@ nav {
     bottom: 0;
     z-index: -1;
     filter: blur(2px) brightness(70%);
-  }
-  
-  .offer-finder {
+}
+
+.offer-finder {
     background-color: white;
-    padding: 30px 80px;
+    padding: 50px 100px; 
     display: flex;
     border-radius: 10px;
     display: inline-block;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  .offer-finder h2 {
-    font-size: 32px;
+    max-width: 90%; 
+    margin: 0 auto;
+}
+
+.offer-finder h2 {
+    font-size: 36px; 
     text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .offer-options {
+    margin-bottom: 30px;
+}
+
+.offer-options {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
-    gap: 1rem ;
-  }
-  
-  .offer-options select {
-    padding: 10px;
+    margin-bottom: 30px; 
+    gap: .8rem; 
+}
+
+.offer-options select {
+    padding: 10px 25px; 
     border-radius: 5px;
     border: 1px solid #ccc;
-  }
-  
-  .offer-finder input {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
+    background-color: #ececec;
+    max-width: 400px; 
+}
+
+.offer-finder input {
+    width: 75%;
+    padding: 15px; 
+    margin-bottom: 30px; 
     border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  .find-offer-btn {
-    background-color: #00d9a1;
-    color: white;
-    padding: 10px 20px;
+    background-color: #ececec;
+    border: none;
+}
+.find-offer-btn-1{
+    background-color: #ececec;
+    width: 85%; 
+    padding: 15px; /* Increased padding */
+    margin-bottom: 30px; /* Increased margin */
+    color: rgb(15, 15, 15);
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  .zappr-btn {
+    font-weight: bold;
+
+}
+.find-offer-btn-1:hover{
+    background-color: #2f3635;
+    color: white;
+    width: 90%;
+    border-radius:  15px;
+}
+.downbtn {
+    display: flex;
+}
+
+.find-offer-btn {
+    background-color: #00d9a1;
+    width: 35%; /* Increased width */
+    margin-left: 19px;
+    padding: 15px; /* Increased padding */
+    margin-bottom: 30px; /* Increased margin */
+    color: rgb(15, 15, 15);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.find-offer-btn:hover {
+    background-color: #087e62;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.find-offer-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.zappr-btn {
     background-color: transparent;
-    
     border: 2px solid #ddd;
     color: #fcf8f8;
-    padding: 10px 20px;
+    padding: 15px 30px; /* Increased padding */
     border-radius: 30px;
-    margin-top: 7vh;
+    margin-top: 10vh; /* Increased margin */
     cursor: pointer;
     text-decoration: underline;
-  }
+    width: 100%; /* Full width */
+    max-width: 300px; /* Increased max-width */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .offer-finder {
+        flex-direction: column;
+        padding: 30px; /* Adjusted padding for smaller screens */
+    }
+
+    .offer-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offer-finder input,
+    .offer-options select,
+    .find-offer-btn,
+    .zappr-btn {
+        width: 100%;
+        max-width: 350px; /* Adjusted max-width for smaller screens */
+    }
+
+    .find-offer-btn {
+        margin-left: 0;
+    }
+}
 /* ............Crypto Banner Section......... */
 .crypto-banner {
     background-color: #FDE24F;
