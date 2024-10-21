@@ -21,3 +21,11 @@ body{
     line-height: 78px;
 }
 /* collabration section */
+/* scroolbar */
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #F44335;
+}
