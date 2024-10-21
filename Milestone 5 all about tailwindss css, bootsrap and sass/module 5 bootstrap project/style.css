@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --color-red: #F44335;      /* Red */
+    --color-dark-teal: #072125; /* Dark Teal */
+    --color-teal: #20484F;     /* Teal */
+}
+/* text{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+} */
