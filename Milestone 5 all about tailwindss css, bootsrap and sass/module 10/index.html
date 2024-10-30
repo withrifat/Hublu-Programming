@@ -1,16 +1,153 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/output.css">
+<!DOCTYPE html >
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/output.css" />
     <title>Module-10</title>
-</head>
-<body>
-    <div class="container bg-green-400 text-center">
-        WITH-RIFAT
+  </head>
+  <body>
+    <!-- svg -->
+     
+    <!-- interactivity -->
+     <div class="snap-y">
+      <nav class="bg-blue-700 text-white py-2 sticky top-0">
+        <ul class="flex space-x-10 justify-center">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfollio">portfollio</a></li>
+          <li><a href="#contact">contact us</a></li>
+        </ul>
+      </nav>
+      <section>
+        <div class="text-center bg-blue-400 scroll-mt-40" id="home">
+          <h1 class="text-5xl">home</h1>
+          <p class="select-none">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis numquam mollitia, doloremque perferendis tempore voluptate hic in iusto corrupti quaerat qui dolore temporibus nisi delectus asperiores rerum itaque quis maiores eos dolorum voluptates optio. Exercitationem alias provident eos unde totam ea id modi, quos fugit laudantium animi et cupiditate aperiam officiis impedit, qui iste natus nesciunt saepe temporibus ad accusamus. Harum autem sequi unde minus dolores earum architecto excepturi consequuntur quibusdam nostrum voluptate eum, officia cupiditate maiores tempore aliquam vel obcaecati rem deserunt totam enim expedita nobis? Nobis, animi debitis suscipit quis soluta eum cumque necessitatibus vel molestiae placeat et.</p>
+        </div>
+        <div class="text-center bg-green-400 scroll-mt-4 " id="about">
+          <h1 class="text-5xl">about</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis numquam mollitia, doloremque perferendis tempore voluptate hic in iusto corrupti quaerat qui dolore temporibus nisi delectus asperiores rerum itaque quis maiores eos dolorum voluptates optio. Exercitationem alias provident eos unde totam ea id modi, quos fugit laudantium animi et cupiditate aperiam officiis impedit, qui iste natus nesciunt saepe temporibus ad accusamus. Harum autem sequi unde minus dolores earum architecto excepturi consequuntur quibusdam nostrum voluptate eum, officia cupiditate maiores tempore aliquam vel obcaecati rem deserunt totam enim expedita nobis? Nobis, animi debitis suscipit quis soluta eum cumque necessitatibus vel molestiae placeat et.</p>
+        </div>
+        <div class="text-center bg-yellow-400 scroll-mt-4" id="portfollio">
+          <h1 class="text-5xl">portfollio</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis numquam mollitia, doloremque perferendis tempore voluptate hic in iusto corrupti quaerat qui dolore temporibus nisi delectus asperiores rerum itaque quis maiores eos dolorum voluptates optio. Exercitationem alias provident eos unde totam ea id modi, quos fugit laudantium animi et cupiditate aperiam officiis impedit, qui iste natus nesciunt saepe temporibus ad accusamus. Harum autem sequi unde minus dolores earum architecto excepturi consequuntur quibusdam nostrum voluptate eum, officia cupiditate maiores tempore aliquam vel obcaecati rem deserunt totam enim expedita nobis? Nobis, animi debitis suscipit quis soluta eum cumque necessitatibus vel molestiae placeat et.</p>
+        </div>
+        <div class="text-center bg-blue-400 scroll-mt-4" id="contact">
+          <h1 class="text-5xl">contact us</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis numquam mollitia, doloremque perferendis tempore voluptate hic in iusto corrupti quaerat qui dolore temporibus nisi delectus asperiores rerum itaque quis maiores eos dolorum voluptates optio. Exercitationem alias provident eos unde totam ea id modi, quos fugit laudantium animi et cupiditate aperiam officiis impedit, qui iste natus nesciunt saepe temporibus ad accusamus. Harum autem sequi unde minus dolores earum architecto excepturi consequuntur quibusdam nostrum voluptate eum, officia cupiditate maiores tempore aliquam vel obcaecati rem deserunt totam enim expedita nobis? Nobis, animi debitis suscipit quis soluta eum cumque necessitatibus vel molestiae placeat et.</p>
+        </div>
+      </section>
     </div>
+     <!-- accent color  -->
+      <div class="mt-20 ml-20 ">
+        <form action="">
+          <label class="accent-red-600" for="">
+            <input type="checkbox"> Please Check
+          </label>
+          <label for="">
+            <input class="accent-green-600" type="radio" name="" id="">Male
+          </label>
+          <select class="appearance-none" name="" id="">
+            <option value="BD ">BD</option>
+            <option value="USA ">USA</option>
+            <option value="UK ">UK</option>
+          </select>
+          <!-- this is for cursor -->
+          <button class="bg-yellow-400 cursor-help">Submit</button>
+          <textarea class="border border-red-200 caret-red-900 resize-none" name="" id=""></textarea>
+        </form>
+      </div>
+    <!-- transforms -->
+    <div class="">
+      <img
+        class="rotate-30 skew-x-6 translate-x-0 h-56 w-60 mt-40 ml-40  origin-bottom-right"
+        src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630"
+        alt="nature"
+      />
+    </div>
+    <!-- tailwind css transition / animation -->
+    <!-- animation -->
+    <div class="animate-none"></div>
+    <!-- button -->
+    <div class="align-middle flex m-10">
+      <button
+        class="bg-blue-500 text-white px-5 py-2 mt-7 ml-7 rounded-full transition delay-300duration-300 hover:translate-y-1 ease-out hover:bg-indigo-500 "
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6 animate-spin"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+          />
+        </svg>
 
-
-</body>
+        Animate
+      </button>
+    </div>
+    <!-- this is for class and back..... -->
+    <div>
+      <h1>images section</h1>
+      <div class="flex">
+        <div class="flex fle">
+          <img
+            class="blur-sm h-56"
+            src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630"
+            alt="nature"
+          />
+        </div>
+        <div>
+          <img
+            class="brightness-200 h-56 drop-shadow-2xl"
+            src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630"
+            alt="nature"
+          />
+        </div>
+        <div>
+          <img
+            class="brightness-100 contrast-200 h-56"
+            src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630"
+            alt="nature"
+          />
+        </div>
+        <div>
+          <img
+            class="brightness-100 contrast-100 saturate-150 h-56"
+            src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630"
+            alt="nature"
+          />
+        </div>
+        <div>
+          <img
+            class="brightness-100 contrast-110 saturate-150 h-56"
+            src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630"
+            alt="nature"
+          />
+        </div>
+      </div>
+      <div>
+        <div>
+          <div
+            class="relative"
+            style="
+              background-image: url(https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630);
+              height: 400px;
+              width: 400px;
+            "
+          >
+            <div
+              class="absolute border mt-40 ml-48 backdrop-blue-xl"
+              style="height: 200; width: 200px"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
