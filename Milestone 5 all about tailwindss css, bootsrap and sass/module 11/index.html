@@ -8,7 +8,79 @@
 </head>
 <body>
     <!-- layout -->
-     <!-- aspect ratio -->
+     <!-- possition -->
+        <div class="bg-green-700 w-full h-60 flex items-center justify-center">
+        <div class="bg-red-700 rounded-full w-40 h-40"></div>
+        </div>
+     <!-- object fit -->
+        <div class="bg-indigo-300 my-10 sticky">
+            <img class="object-none object-left-bottom h-48 w-80 mx-auto" src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1024&h=1280&q=80">
+        </div>
+     <!-- float -->
+    <div>
+        <img class="w-1/3 float-start" src="https://images.unsplash.com/photo-1719937051176-9b98352a6cf4?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img class="w-1/3 float-end" src="https://images.unsplash.com/photo-1719937051176-9b98352a6cf4?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <p class="clear-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, dolorum?</p>
+    </div>
+     <!-- box sizing in tailwind css -->
+     <div class="bg-red-400 mt-5 ML-5 W-16 border-4 p-3 inline-block ">
+        <div class="1 inline-block ">Border one</div>
+     </div>
+     <div class="bg-green-400 mt-5 ML-5 W-16 border">
+        <div class="2">Border Two</div>
+     </div>
+    <span class="box-decoration-slice border bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-2 ...">
+        Hello<br />
+        World
+      </span>
+      <span class="box-decoration-clone bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-2 ...">
+        Hello<br />
+        World
+      </span>
+     <!-- breack after -->
+    <div>
+        <h1>text 1</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At nam iusto repudiandae beatae fuga pariatur autem tenetur dolore doloremque et. Deleniti sit laboriosam quas eum reiciendis numquam quia reprehenderit iusto, eius amet optio necessitatibus aliquam? Cum accusantium molestias deserunt corporis. Labore iure nulla, distinctio quis ipsa qui numquam! Nihil hic autem ratione atque optio dicta quis porro, aspernatur odit eveniet ipsum! Reprehenderit asperiores tenetur animi similique vitae deleniti in voluptas laborum, perferendis fugit esse vel excepturi laboriosam quo a! Voluptatibus quam ratione, velit doloribus voluptate dignissimos tempora dolorum quo vel cum non? Hic est quam perferendis. Distinctio, aut molestiae. Culpa?</p>
+    </div>
+    <div>
+        <h1>text 1</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At nam iusto repudiandae beatae fuga pariatur autem tenetur dolore doloremque et. Deleniti sit laboriosam quas eum reiciendis numquam quia reprehenderit iusto, eius amet optio necessitatibus aliquam? Cum accusantium molestias deserunt corporis. Labore iure nulla, distinctio quis ipsa qui numquam! Nihil hic autem ratione atque optio dicta quis porro, aspernatur odit eveniet ipsum! Reprehenderit asperiores tenetur animi similique vitae deleniti in voluptas laborum, perferendis fugit esse vel excepturi laboriosam quo a! Voluptatibus quam ratione, velit doloribus voluptate dignissimos tempora dolorum quo vel cum non? Hic est quam perferendis. Distinctio, aut molestiae. Culpa?</p>
+    </div>
+    <div>
+        <h1 class="break-after-page">text 1</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At nam iusto repudiandae beatae fuga pariatur autem tenetur dolore doloremque et. Deleniti sit laboriosam quas eum reiciendis numquam quia reprehenderit iusto, eius amet optio necessitatibus aliquam? Cum accusantium molestias deserunt corporis. Labore iure nulla, distinctio quis ipsa qui numquam! Nihil hic autem ratione atque optio dicta quis porro, aspernatur odit eveniet ipsum! Reprehenderit asperiores tenetur animi similique vitae deleniti in voluptas laborum, perferendis fugit esse vel excepturi laboriosam quo a! Voluptatibus quam ratione, velit doloribus voluptate dignissimos tempora dolorum quo vel cum non? Hic est quam perferendis. Distinctio, aut molestiae. Culpa?</p>
+    </div>
+     <!-- this is grid -->
+    <div class="columns-3xs gap-2 row-auto  ">
+        <img class="w-full aspect-video" src="https://plus.unsplash.com/premium_photo-1669652639356-f5cb1a086976?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img src="" alt="">
+        <img class="w-full aspect-square" src="https://images.unsplash.com/photo-1555967522-37949fc21dcb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img class="w-full aspect-video" src="https://plus.unsplash.com/premium_photo-1676422355165-d809008b8342?q=80&w=1599&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img class="w-full aspect-video" src="https://plus.unsplash.com/premium_photo-1677567996070-68fa4181775a?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img class="w-full aspect-video" src="https://plus.unsplash.com/premium_photo-1669652639356-f5cb1a086976?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img src="" alt="">
+        <img class="w-full aspect-square" src="https://images.unsplash.com/photo-1555967522-37949fc21dcb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img class="w-full aspect-video" src="https://plus.unsplash.com/premium_photo-1676422355165-d809008b8342?q=80&w=1599&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img class="w-full aspect-video" src="https://plus.unsplash.com/premium_photo-1677567996070-68fa4181775a?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img class="w-full aspect-video" src="https://plus.unsplash.com/premium_photo-1669652639356-f5cb1a086976?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img src="" alt="">
+        <img class="w-full aspect-square" src="https://images.unsplash.com/photo-1555967522-37949fc21dcb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img class="w-full aspect-video" src="https://plus.unsplash.com/premium_photo-1676422355165-d809008b8342?q=80&w=1599&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img class="w-full aspect-video" src="https://plus.unsplash.com/premium_photo-1677567996070-68fa4181775a?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img class="w-full aspect-video" src="https://plus.unsplash.com/premium_photo-1669652639356-f5cb1a086976?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img src="" alt="">
+        <img class="w-full aspect-square" src="https://images.unsplash.com/photo-1555967522-37949fc21dcb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img class="w-full aspect-video" src="https://plus.unsplash.com/premium_photo-1676422355165-d809008b8342?q=80&w=1599&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img class="w-full aspect-video" src="https://plus.unsplash.com/premium_photo-1677567996070-68fa4181775a?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img class="w-full aspect-video" src="" alt="">
+    </div>
+
     
+     <!-- aspect ratio -->
+     <iframe class="w-full  aspect-video" width="560" height="315" src="https://www.youtube.com/embed/FWyiYzgPNi4?si=TaiNg1qe4xlxP6F8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     <!--this is a container  -->
+    <p class="container ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatem earum eaque itaque et, eveniet necessitatibus molestias numquam reiciendis commodi mollitia doloribus explicabo officiis. Laudantium, rerum adipisci. Iste pariatur impedit molestiae consequatur excepturi odit ducimus cum sed eaque veritatis. Tempore laudantium animi eius cupiditate vitae delectus at. Asperiores, iure cumque.</p>
+
+
 </body>
 </html>
