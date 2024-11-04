@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Ticker Ai</title>
 </head>
 <body>
     <!-- header section -->
-     
+
     <header class="md:mx-14 md:py-4 py-2 px-2">
         <nav class="container mx-auto flex items-center justify-between">
             <div class="flex items-center gap-1 md:gap-3 ">
@@ -31,5 +32,29 @@
             </div>
         </nav>
     </header>
+    <!-- Banner Section -->
+     <section class="flex flex-col items-center md:px-0 px-4 md:py-32 py-20 bg-[url('https://images.pexels.com/photos/8370752/pexels-photo-8370752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-no-repeat bg-blur-sm bg-cover ">
+        <h1 class="md:text-7xl text-3xl font-bold italic text-white">ticker AI</h1>
+        <div class="flex bg-white md:w-[520px] w-full md:p-4 p-2 items-center rounded gap-4 md:mt-10 mt-4 hover:ring ">
+            <i class="fa fa-search"></i>
+            <input type="text" name="search" class="w-full outline-none " placeholder="Search any market topic...">
+        </div>
+        <p class="text-xs text-gray-300 md:pt-2 pt-2">
+            There are 6 articles available for your preferences
+        </p>
+     </section>
+     <!--  News section-->
+    <section class="container grid grid-cols-12 mx-auto mb-8 gap-8 md:px-0 px-4 pt-10">
+        <!-- all news section -->
+        <section class="md:col-span-9 col-span-12 md:ml-8">
+            <div>
+                <h3 class="md:text-2xl text-lg font-semibold text-[#333333]">All NEWS</h3>
+            </div>
+        </section>
+        <!-- fiture section -->
+        <section class="md:col-span-3 col-span-12 md:mr-8 ">
+
+        </section>
+    </section>
 </body>
 </html>
