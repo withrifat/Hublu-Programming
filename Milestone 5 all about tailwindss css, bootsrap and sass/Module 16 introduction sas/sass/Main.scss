@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@mixin MyButton {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    height: 150px;
+}
+
+// for loop and while loop
+@for $i from 1 to 10 {
+    .Div2- #{$i} {
+        width: 100px * $i;
+        height: 100px * $i;
+        background-color: darken($color: green, $amount: 0)
+    }
+}
+// @import url(_demo.scss);   THIS IS OLD VERSION
+@import url(_demo.scss);   
+
+.btn1 {
+    @include MyButton;
+}
+.btn2 {
+    @include MyButton;
+}
+
+$myValue:white ;
+.parentDiv {
+    @if $myValue == max {background-color: red;}
+    @else if $myValue == zero {background-color: blue;}
+    @else {background-color: green;}
+    width: 100px;
+    height: 100px;
+}
+@mixin ParentStyle($value){
+    @if $value > 100 {background-color: red;}
+    @else if $value > 50 {background-color: blue;}
+    @else if $value < 20 {background-color: rgb(184, 240, 18);}
+    @else {background-color: green;}
+    width: 100px;
+    height: 100px;
+}
+.Div2 {
+    @include ParentStyle(70);
+    height: 100px;
+    width: 100px;
+}
+
+// for loop and while looop

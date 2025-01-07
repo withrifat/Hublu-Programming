@@ -1,0 +1,14 @@
+H1{
+    color: red;
+    text-align: center;
+    background: #97c783;
+}
+
+@mixin MyButton {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    height: 150px;
+}
