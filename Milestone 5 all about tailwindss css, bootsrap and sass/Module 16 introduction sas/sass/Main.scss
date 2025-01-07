@@ -16,10 +16,11 @@
     .Div2- #{$i} {
         width: 100px * $i;
         height: 100px * $i;
-        background-color: darken($color: green, $amount: 0)
+        background-color: darken($color: green, $i * 10%);
     }
 }
-// @import url(_demo.scss);   THIS IS OLD VERSION
+
+// @import url(_demo.scss);   THIS IS OLD VERSION 
 @import url(_demo.scss);   
 
 .btn1 {
