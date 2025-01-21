@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code With Rifat | Project</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 70%;
+            padding: 10px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .main {
+            text-align: center;
+            padding: 10px;
+            font-size: 2em;
+            border: 3px solid white;
+            margin-bottom: 20px;
+        }
+
+        .typingArea {
+            width: 100%;
+            height: 350px;
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+
+        .btn {
+            width: 20%;
+            outline: none;
+            border: none;
+            font-size: 2em;
+            padding: 10px;
+            color: white;
+            background-color: blueviolet;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .btn:disabled {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">Press Start to begin!</div>
+        <textarea name="words" class="typingArea" disabled></textarea>
+        <br />
+        <button class="btn">Start</button>
+    </div>
+    <script>
+        const main = document.querySelector(".main");
+        const typeArea = document.querySelector(".typingArea");
+        const btn = document.querySelector(".btn");
+
+        const words = [
+            "The quick brown fox jumps over the lazy dog. Every morning, the sun rises in the east and sets in the west. People walk to work, chatting with friends and neighbors along the way. The world is full of opportunities, and each day brings a new chance to learn something. Whether you're reading a book, writing a letter, or typing a message, words have the power to connect us all. Keep moving forward, stay curious, and always try your best. ",
+            "What is JavaScript?",
+            "What is React?",
+            "What is Programming Language?",
+            "What's your name?",
+            "Where are you from?",
+            "This is just random word",
+            "What is Remix.js?",
+            "New Technologies",
+            "Is programming hard?",
+            "Why do you wanna become a programmer?",
+            "Which programming language do you like the most?",
+            "What is Golang? and why do you wanna learn it?",
+            "What is CSS?",
+        ];
+
+        const game = {
+            start: 0,
+            end: 0,
+            user: "",
+            arrText: "",
+        };
+
+        btn.addEventListener("click", () => {
+            if (btn.textContent === "Start") {
+                play();
+                typeArea.value = "";
+                typeArea.disabled = false;
+                typeArea.focus();
+            } else if (btn.textContent === "Done") {
+                typeArea.disabled = true;
+                main.style.borderColor = "white";
+                end();
+            }
+        });
+
+        function play() {
+            let randText = Math.floor(Math.random() * words.length);
+            main.textContent = words[randText];
+            game.arrText = words[randText];
+            main.style.borderColor = "#c8c8c8";
+            btn.textContent = "Done";
+            const duration = new Date();
+            game.start = duration.getTime(); // unix timestamp
+        }
+
+        function end() {
+            const duration = new Date();
+            game.end = duration.getTime();
+            const totalTime = (game.end - game.start) / 1000;
+            game.user = typeArea.value;
+            const correct = results();
+            main.style.borderColor = "white";
+            main.innerHTML = `Time: ${totalTime} seconds | Score: ${correct.score} out of ${correct.total}`;
+            btn.textContent = "Start";
+        }
+
+        function results() {
+            let valueOne = game.arrText.split(" ");
+            let valueTwo = game.user.split(" ");
+            let score = 0;
+            valueOne.forEach((word, idx) => {
+                if (word === valueTwo[idx]) {
+                    score++;
+                }
+            });
+
+            return { score, total: valueOne.length };
+        }
+    </script>
+</body>
+</html>
