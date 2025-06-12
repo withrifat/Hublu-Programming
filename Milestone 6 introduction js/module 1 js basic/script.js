@@ -8,3 +8,4 @@ const rifat = "This is Rifat";
 console.log(rifat); // Error: Assignment to constant variable.
 
 // ,,,,,,,,,,,,,,,,,,,,,,,,
+x

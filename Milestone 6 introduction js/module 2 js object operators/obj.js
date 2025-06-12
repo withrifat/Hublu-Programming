@@ -1,9 +1,4 @@
 
-
-
-
-
-
 const first = {
     name: 'John',
     lstName: 'Doe',
