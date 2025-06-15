@@ -13,6 +13,7 @@ console.log(text.charAt(5));
 console.log(text.charAt(0));
 
 
-
+//indexOf() method
+console.log(text.indexOf("is")); // This will log the index of the first occurrence of "is" in the string
 
 // Js String Methods, "This mathord is very important for string  manipulation data in javascript"
