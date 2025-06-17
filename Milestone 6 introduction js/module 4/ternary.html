@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>Ternary Operator উদাহরণসমূহ (বাংলা)</title>
+  <style>
+    body {
+      font-family: 'SolaimanLipi', sans-serif;
+      background-color: #f4f7f9;
+      color: #2c3e50;
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #34495e;
+      margin-bottom: 40px;
+    }
+
+    .example-box {
+      background-color: #fff;
+      border-left: 6px solid #3498db;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 6px;
+    }
+
+    .example-box h2 {
+      color: #2980b9;
+      margin-top: 0;
+    }
+
+    pre {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-radius: 4px;
+      font-family: monospace;
+      overflow-x: auto;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>JavaScript Ternary Operator সহজভাবে (বাংলা)</h1>
+
+  <div class="note">
+    <strong>👉 সংজ্ঞা:</strong><br>
+    <code>condition ? expression_if_true : expression_if_false;</code><br><br>
+    যদি <code>condition</code> সত্য হয়, তাহলে <code>expression_if_true</code> চলবে, না হলে <code>expression_if_false</code> চলবে।
+  </div>
+
+  <h2>উদাহরণ ১: বয়স অনুযায়ী মেসেজ</h2>
+  <div class="example">
+let age = 20;
+let message = age >= 18 ? "আপনি প্রাপ্তবয়স্ক" : "আপনি এখনও শিশু";
+console.log(message);
+  </div>
+
+  <h2>উদাহরণ ২: জোড় না বিজোড়</h2>
+  <div class="example">
+let number = 7;
+let result = (number % 2 === 0) ? "জোড় সংখ্যা" : "বিজোড় সংখ্যা";
+console.log(result);
+  </div>
+
+  <div class="note">
+    <strong>✅ কেন ব্যবহার করব?</strong><br>
+    &#10004; কোড ছোট হয়<br>
+    &#10004; এক লাইনে <code>if-else</code> লেখা যায়<br>
+    &#10004; পড়তে সহজ যখন লজিক সোজা হয়
+  </div>
+
+  <h1>JavaScript Ternary Operator - আরও উদাহরণ (বাংলা)</h1>
+
+  <div class="example-box">
+    <h2>উদাহরণ ১: পাস না ফেল</h2>
+    <pre>
+let marks = 45;
+let result = marks >= 40 ? "আপনি পাস করেছেন" : "আপনি ফেল করেছেন";
+console.log(result);
+    </pre>
+  </div>
+
+  <div class="example-box">
+    <h2>উদাহরণ ২: লগইন স্টেটাস</h2>
+    <pre>
+let isLoggedIn = true;
+let status = isLoggedIn ? "Welcome back!" : "Please log in";
+console.log(status);
+    </pre>
+  </div>
+
+  <div class="example-box">
+    <h2>উদাহরণ ৩: ডিসকাউন্ট প্রযোজ্য কিনা</h2>
+    <pre>
+let price = 600;
+let discount = price > 500 ? "ডিসকাউন্ট প্রযোজ্য" : "ডিসকাউন্ট প্রযোজ্য নয়";
+console.log(discount);
+    </pre>
+  </div>
+
+  <div class="example-box">
+    <h2>উদাহরণ ৪: দিন না রাত</h2>
+    <pre>
+let hour = 22;
+let timeOfDay = hour < 18 ? "দিন" : "রাত";
+console.log("এখন " + timeOfDay);
+    </pre>
+  </div>
+
+  <div class="example-box">
+    <h2>উদাহরণ ৫: ইউজার প্রিমিয়াম কিনা</h2>
+    <pre>
+let isPremiumUser = false;
+let access = isPremiumUser ? "Full Access" : "Limited Access";
+console.log(access);
+    </pre>
+  </div>
+
+</body>
+</html>
